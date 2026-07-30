@@ -1,0 +1,33 @@
+# Binaries
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+goapp
+main
+
+# Test / coverage
+*.test
+coverage.out
+test-report.json
+
+# Dependencies
+vendor/
+
+# Logs
+logs
+*.log
+build-errors.log
+
+# Air (live reload)
+.air/
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+
+# Local secrets — 실제 DB 접속정보가 든 설정은 커밋하지 않는다
+app/config/yml/local.yml
+.env

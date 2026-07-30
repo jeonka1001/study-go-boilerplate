@@ -1,0 +1,23 @@
+server:
+  profile: dev
+  port: 8080
+
+app:
+  version: '1.0.0'
+  url:
+    account:
+      base-url: ''   # TODO
+  log:
+    level: 'info'
+    history-type: 'history-store-boilerplate'
+
+db:
+  host: ''                 # TODO: dev DB host (환경변수 DB_HOST 로도 오버라이드 가능)
+  port: '3306'
+  username: ''             # TODO
+  password: ''             # TODO: 절대 커밋하지 말 것. 배포 시크릿/환경변수(DB_PASSWORD)로 주입
+  name: ''                 # TODO
+  charset: 'utf8mb4'
+  max-open-conns: 20
+  max-idle-conns: 10
+  conn-max-lifetime-minutes: 30
