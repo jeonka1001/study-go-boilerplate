@@ -2,11 +2,11 @@ package main
 
 import (
 	"boilerplate/app"
-	"boilerplate/app/config"
 	"boilerplate/app/core"
 	"boilerplate/app/core/helper"
 	"boilerplate/app/core/helper/logger"
 	"boilerplate/app/domain/user"
+	"boilerplate/config"
 
 	"github.com/gofiber/fiber/v2"
 	"go.uber.org/fx"

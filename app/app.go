@@ -1,11 +1,11 @@
 package app
 
 import (
+	"boilerplate/config"
 	"context"
 	"fmt"
 	"net/http"
 
-	"boilerplate/app/config"
 	"boilerplate/app/core/exception"
 	"boilerplate/app/core/helper/logger"
 

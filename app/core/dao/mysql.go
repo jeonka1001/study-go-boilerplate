@@ -1,12 +1,12 @@
 package dao
 
 import (
+	"boilerplate/config"
 	"context"
 	"database/sql"
 	"fmt"
 	"time"
 
-	"boilerplate/app/config"
 	"boilerplate/app/core/helper/logger"
 
 	"go.uber.org/fx"

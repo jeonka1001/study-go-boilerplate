@@ -23,11 +23,11 @@ func init() {
 	}
 }
 
-// NewConfig 는 app/config/yml/<profile>.yml 을 읽어 Config 로 파싱한다.
+// NewConfig 는 config/yml/<profile>.yml 을 읽어 Config 로 파싱한다.
 // DB 비밀번호 등 민감 정보는 yml 에 직접 넣지 말고 환경변수로 오버라이드하는 것을 권장한다.
 func NewConfig() (*Config, error) {
 	var cfg *Config
-	path := filepath.Join(fmt.Sprintf("app/config/yml/%s.yml", Profile))
+	path := filepath.Join(fmt.Sprintf("config/yml/%s.yml", Profile))
 
 	viper.SetConfigType("yaml")
 	viper.SetConfigFile(path)

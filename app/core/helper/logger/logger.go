@@ -1,10 +1,9 @@
 package logger
 
 import (
+	"boilerplate/config"
 	"fmt"
 	"log"
-
-	"boilerplate/app/config"
 
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
